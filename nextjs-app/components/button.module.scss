@@ -1,0 +1,22 @@
+@import "../styles/setting.scss";
+
+.struct {
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: 2px 2px 0 transparent;
+	cursor: pointer;
+	
+	&:hover {
+		opacity: .85;
+	}
+}
+
+.primary {
+	@extend .struct;
+	background: $color-secondary;
+	font-weight: bold;
+	box-shadow: 2px 2px 0 lighten($color-secondary, 20%);
+}
