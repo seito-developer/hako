@@ -1,4 +1,4 @@
-import 'sanitize.css'
+import 'minireset.css'
 import '../styles/global.scss'
 
 export default function App({ Component, pageProps }) {
