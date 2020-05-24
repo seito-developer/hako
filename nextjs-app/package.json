@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && NODE_OPTIONS='--inspect' next src",
     "build": "next build",
     "start": "next start"
   },
@@ -12,6 +12,7 @@
     "date-fns": "^2.14.0",
     "dotenv": "^8.2.0",
     "firebase": "^7.14.5",
+    "firebase-admin": "^8.12.1",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.2",
     "minireset.css": "0.0.6",

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "hako-735fa"
+    "default": "hako-735fa",
+    "firefunctions": "hako-735fa"
   }
 }
