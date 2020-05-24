@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import firebase from "firebase";
 import "firebase/storage";
 import styles from './SampleData.module.scss'
-// import { loadFirebase }  from '../lib/db';
 
 class SampleData extends Component {
   constructor(props) {
@@ -14,7 +13,6 @@ class SampleData extends Component {
   }
   
   getFireData(){
-    //   let firebase = loadFirebase()
       let db = firebase.database()
       let ref = db.ref('/seito')
       let self = this
@@ -60,19 +58,3 @@ class SampleData extends Component {
 }
 
 export default SampleData
-
-// import styles from './button.module.scss'
-// import cn from 'classnames'
-
-// export default function Button({children, mod}) {
-// 	return (
-// 		<button className={
-// 				cn(styles.button, {
-// 					[styles.primary]: mod === 'primary',
-// 					[styles.info]: mod === 'info'
-// 				})
-// 			} type="button">
-// 			{children}
-// 		</button>)
-// }
- 
