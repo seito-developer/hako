@@ -1,0 +1,20 @@
+@import "../styles/setting.scss";
+
+.icon {
+    display: inline-block;
+    line-height: 1;
+    margin-right: .2em;
+    vertical-align: middle;
+    position: relative;
+}
+
+.large {
+    width: 1.5rem;
+    height: auto;
+}
+
+.google {
+    path {
+        fill: #D62D20;
+    }
+}

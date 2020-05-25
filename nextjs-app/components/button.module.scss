@@ -12,6 +12,7 @@
     background-color: #f5f5f5;
     border: 2px solid transparent;
     color: rgba(0,0,0,.7);
+    font-weight: bold;
     
     font-size: 1rem;
     border-radius: 5px;
@@ -21,6 +22,7 @@
 	}
 }
 
+// color
 .primary {
     border-color: darken(#ebfffc, 7%);
     background-color: #ebfffc;
@@ -31,4 +33,17 @@
 	border-color: darken(#eef6fc, 7%);
 	background-color: #eef6fc;
     color: #1d72aa;
+}
+
+.google {
+    border-color: #333;
+	background-color: #333;
+    color: #fff;
+}
+
+//size
+.large {
+    padding: 15px 20px;
+    min-width: 300px;
+    font-size: 1.25rem;
 }
