@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../coding/dev"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dev"
+	}
+}

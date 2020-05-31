@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACV,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,QAAQ;CAMlB;;AARD,AAIE,WAJS,CAIT,EAAE,CAAC;EACD,MAAM,EAAE,cAAc;EACtB,OAAO,EAAE,GAAG;CACb",
+    "sources": [
+        "SampleData.module.scss",
+        "../styles/setting.scss"
+    ],
+    "names": [],
+    "file": "SampleData.module.css"
+}
