@@ -13,14 +13,14 @@
     &__heading {
         display: flex;
         align-items: center;
-        img {
+        > img {
             width: 50px;
             height: auto;
             border: 1px solid #ccc;
             border-radius: 50%;
             overflow: hidden;
         }
-        h1 {
+        > h1 {
             margin-left: 10px;
             font-size: 20px;
         }
@@ -38,5 +38,11 @@
     }
     &__desc {
         margin-top: 10px;
+    }
+    &__list {
+        margin-top: 10px;
+        > li {
+            margin-top: 5px;
+        }
     }
 }

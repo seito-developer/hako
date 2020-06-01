@@ -1,0 +1,83 @@
+@import "../styles/setting.scss";
+
+.item {
+    border: 1px solid #ccc;
+
+    > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__remark {
+        background: #999;
+        width: 3%;
+        min-width: 30px;
+        align-items: stretch;
+        position: relative;
+
+        &::before, &::after {
+            content: "";
+            display: block;
+            background-color: #fff;
+            border: 1px solid #999;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 10px;
+        }
+        &::before {
+            margin: -2px 0 0 -2px;
+        }
+        &::after {
+            margin: 2px 0 0 2px;
+        }
+    }
+    &__contents {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        > img {
+            width: 30px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    &__header {
+        margin-left: 10px;
+        > h1 {
+            display: block;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        > p {
+            display: block;
+            color: #999;
+            line-height: 1.5;
+        }
+    }
+
+    &__button {}
+
+    &__edit {
+        border: 0;
+        text-align: center;
+        padding: 0 8px 10px;
+        border-radius: 3px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        background: #eee;
+        letter-spacing: .05em;
+    }
+}

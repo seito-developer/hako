@@ -1,4 +1,5 @@
 import stylesCard from './card.module.scss'
+import Item from '../components/item.module.js'
 // import cn from 'classnames'
 
 export default function Card() {
@@ -14,7 +15,17 @@ export default function Card() {
 			<p className={stylesCard.card__desc}>
 				Description field here text description field here text description field here
 			</p>
-
+			<ul className={stylesCard.card__list}>
+				<li>
+					<Item />
+				</li>
+				<li>
+					<Item />
+				</li>
+				<li>
+					<Item />
+				</li>
+			</ul>
 		</article>
 		)
 }
