@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import stylesLayout from '../components/layout.module.scss'
 import Card from '../components/card.module.js'
 
 export default function Projects() {
@@ -8,7 +9,9 @@ export default function Projects() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Card />
+      <dic className={stylesLayout.container}>
+        <Card />
+      </dic>
     </Layout>
   )
 }
