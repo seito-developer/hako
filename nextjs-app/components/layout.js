@@ -4,7 +4,7 @@ import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 
 const name = 'A digital case on Web for IT business persons'
-export const siteTitle = 'Hako'
+export const siteTitle = 'HubBoard'
 
 export default function Layout({ children, home }) {
   return (

@@ -8,7 +8,7 @@ export default function Hero() {
 		<div className={stylesHero.hero}>
 			<div className={stylesLayout.container}>
 				<div className={stylesHero.hero__logo}></div>
-				<div className={stylesHero.hero__headline}>BindHub</div>
+				<div className={stylesHero.hero__headline}>HubBoard</div>
 				<h1 className={stylesHero.hero__desc}>
 					Help Your project.<br/>
 					It's easy to access to any materials here.
