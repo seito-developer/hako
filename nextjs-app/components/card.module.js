@@ -1,10 +1,13 @@
 import stylesCard from './card.module.scss'
 import Item from '../components/item.module.js'
-// import cn from 'classnames'
+import cn from 'classnames'
 
-export default function Card() {
+export default function Card({state}) {
 	return (
-		<article className={stylesCard.card}>
+		<article className={cn(stylesCard.card, {
+			[stylesCard.isClose]: state === 'isClose'
+		})}>
+			<div className={stylesCard.card__cover}></div>
 			<div className={stylesCard.card__header}>
 				<div className={stylesCard.card__heading}>
 					<img src="https://dummyimage.com/100x100/eeeeee/333333"/>
@@ -26,6 +29,9 @@ export default function Card() {
 					<Item />
 				</li>
 			</ul>
+			<div className={stylesCard.card__seal}>
+				<span></span>
+			</div>
 		</article>
 		)
 }

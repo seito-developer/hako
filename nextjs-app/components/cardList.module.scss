@@ -1,0 +1,9 @@
+@import "../styles/setting.scss";
+
+.cardList {
+    display: flex;
+    
+    > * {
+        margin: 10px;
+    }
+}
