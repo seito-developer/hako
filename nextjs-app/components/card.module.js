@@ -3,6 +3,7 @@ import Item from '../components/item.module.js'
 import cn from 'classnames'
 
 export default function Card({state}) {
+
 	return (
 		<article className={cn(stylesCard.card, {
 			[stylesCard.isClose]: state === 'isClose'
