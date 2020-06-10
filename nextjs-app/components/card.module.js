@@ -2,10 +2,10 @@ import stylesCard from './card.module.scss'
 import Item from '../components/item.module.js'
 import cn from 'classnames'
 
-export default function Card({state}) {
+export default function Card({onClick, state}) {
 
 	return (
-		<article className={cn(stylesCard.card, {
+		<article onClick={onClick} className={cn(stylesCard.card, {
 			[stylesCard.isClose]: state === 'isClose'
 		})}>
 			<div className={stylesCard.card__cover}></div>
