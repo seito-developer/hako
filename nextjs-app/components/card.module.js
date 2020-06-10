@@ -30,9 +30,6 @@ export default function Card({onClick, state}) {
 					<Item />
 				</li>
 			</ul>
-			<div className={stylesCard.card__seal}>
-				<span></span>
-			</div>
 		</article>
 		)
 }

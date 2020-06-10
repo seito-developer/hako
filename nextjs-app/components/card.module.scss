@@ -7,12 +7,20 @@
     max-width: 980px;
     max-height: 1000px;
     transition: 
-        max-width 0.25s ease-in-out,
-        max-height 0.25s ease-in-out;
+        max-width .5s ease-in-out,
+        max-height .5s ease-in-out;
 
     $p: &;
 
+    &:hover{
+        #{$p}__cover{
+            opacity: 0;
+        }
+    }
+
     &__cover {
+        display: none;
+        background-color: rgba(0,0,0,.3);
         position: absolute;
         right: 0;
         top: 0;
@@ -20,6 +28,7 @@
         width: 100%;
         height: 100%;
         cursor: pointer;
+        transition: opacity .5s ease-in-out;
     }
 
     &__header {
@@ -63,34 +72,16 @@
             margin-top: 5px;
         }
     }
-    &__seal {
-        background-color: #707070;
-        position: absolute;
-        z-index: 2;
-        right: 0;
-        bottom: 0;
-        width: 150px;
-        height: 150px;
-        transform: rotate(60deg) translate(115px, 4px);
-
-        > span {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            right: 60%;
-            top: 25%;
-            border-right: 3px solid #fff;
-            transform: rotate(75deg);
-            border: 10px solid transparent;
-            border-bottom: 10px solid #fff;
-        }
-    }
 
     //State
     &.isClose{
         max-width: 300px;
         max-height: 196px;
         overflow: hidden;
+
+        #{$p}__cover {
+            display: block;
+        }
 
         #{$p}__desc {
             text-overflow: ellipsis;
