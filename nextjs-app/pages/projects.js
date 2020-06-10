@@ -9,18 +9,21 @@ export default class Projects extends Component {
 
 	constructor(props){
     super(props)
-		this.status = 'isClose'
+		this.state = {
+      close: 'isClose'
+    }
   }
   
-	clickHandler(status){
-    const statusClass = 'isClose'
-
-		if(status === statusClass){
-      this.status = false
+	clickHandler(state){
+    if(state === 'isClose'){
+      this.setState(state => ({
+        close: false
+      }))
     } else {
-      this.status = statusClass
+      this.setState(state => ({
+        close: 'isClose'
+      }))
     }
-    console.log(this.status)
   }
   
   render(){
@@ -31,7 +34,7 @@ export default class Projects extends Component {
         </Head>
         <div className={stylesLayout.container}>
           <CardList>
-            <Card onClick={() => this.clickHandler(this.status)} state={this.status} />
+            <Card onClick={() => this.clickHandler(this.state.close) } state={this.state.close} />
           </CardList>
         </div>
       </Layout>
