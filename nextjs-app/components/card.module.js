@@ -2,9 +2,9 @@ import stylesCard from './card.module.scss'
 import Item from '../components/item.module.js'
 import cn from 'classnames'
 
-export default function Card({onClick, state}) {
+export default function Card({projects, onClick, state}) {
 
-	return (
+	const cards = projects.map((project) =>
 		<article onClick={onClick} className={cn(stylesCard.card, {
 			[stylesCard.isClose]: state === 'isClose'
 		})}>
@@ -12,7 +12,7 @@ export default function Card({onClick, state}) {
 			<div className={stylesCard.card__header}>
 				<div className={stylesCard.card__heading}>
 					<img src="https://dummyimage.com/100x100/eeeeee/333333"/>
-					<h1>Project Name</h1>
+					<h1>{project.name}</h1>
 				</div>
 				<button className={stylesCard.card__edit} type="button">...</button>
 			</div>
@@ -31,6 +31,7 @@ export default function Card({onClick, state}) {
 				</li>
 			</ul>
 		</article>
-		)
+	)
+	return cards
 }
  
