@@ -7,7 +7,7 @@ module.exports = {
     {
       id: 'u0001-p0001',
       name: 'Project Name A',
-      desc: 'Description field here text description field here text description field here',
+      desc: 'A Description field here text description field here text description field here',
       avator: 'https://dummyimage.com/30x30/eeeeee/333333',
       items: [
         {
@@ -30,8 +30,8 @@ module.exports = {
     }, {
       id: 'u0001-p0002',
       name: 'Project Name B',
-      desc: 'Description field here text description field here text description field here',
-      avator: 'https://dummyimage.com/30x30/eeeeee/333333',
+      desc: 'B Description field here text description field here text description field here',
+      avator: 'https://dummyimage.com/30x30/eeeeee/999999',
       items: [
         {
           id: 'u0001-p0002-i0001',

@@ -37,7 +37,10 @@ export default class Projects extends Component {
         </Head>
         <div className={stylesLayout.container}>
           <CardList>
-            <Card projects={this.state.project} onClick={() => this.handleClick(this.state.close) } state={this.state.close} />
+            <Card 
+              projects={this.state.project} onClick={() => this.handleClick(this.state.close) }
+              state={this.state.close}  
+            />
           </CardList>
         </div>
       </Layout>

@@ -11,13 +11,13 @@ export default function Card({projects, onClick, state}) {
 			<div className={stylesCard.card__cover}></div>
 			<div className={stylesCard.card__header}>
 				<div className={stylesCard.card__heading}>
-					<img src="https://dummyimage.com/100x100/eeeeee/333333"/>
+					<img src={project.avator}/>
 					<h1>{project.name}</h1>
 				</div>
 				<button className={stylesCard.card__edit} type="button">...</button>
 			</div>
 			<p className={stylesCard.card__desc}>
-				Description field here text description field here text description field here
+				{project.desc}
 			</p>
 			<ul className={stylesCard.card__list}>
 				<li>
